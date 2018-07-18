@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/nest-angular-microfrontend-example",
+            "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -82,7 +82,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/nest-angular-microfrontend-example-server",
+            "outputPath": "dist/server",
             "main": "src/main.server.ts",
             "tsConfig": "src/tsconfig.server.json"
           },
@@ -100,7 +100,7 @@
         "prerender": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/nest-angular-microfrontend-example-prerender",
+            "outputPath": "dist/prerender",
             "main": "src/main.server.ts",
             "tsConfig": "src/tsconfig.prerender.json"
           },

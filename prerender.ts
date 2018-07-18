@@ -3,12 +3,12 @@ import * as path from 'path';
 import * as fs from 'fs';
 import { enableProdMode } from '@angular/core';
 import { renderModuleFactory } from '@angular/platform-server';
-import { AppServerModuleNgFactory, LAZY_MODULE_MAP } from './dist/nest-angular-microfrontend-example-prerender/main';
+import { AppServerModuleNgFactory, LAZY_MODULE_MAP } from './dist/server/main';
 
 const minify = require('html-minifier').minify;
 const { provideModuleMap } = require('@nguniversal/module-map-ngfactory-loader');
 
-const distFolder = './dist/nest-angular-microfrontend-example';
+const distFolder = './dist/browser';
 const index = fs
     .readFileSync(path.resolve(__dirname, `${distFolder}/index.html`), 'utf8')
     .toString();
